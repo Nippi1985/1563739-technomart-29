@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин «Техномарт»</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,
+              wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,14 +21,14 @@
       <li class="top-menu-search">
         <p class="top-menu-search-field">Поиск:</p> <!-- ТУТ БУДЕТ ПОЛЕ ПОИСКА-->
       </li>
-      <li class="top-menu-item">
-        <a class="top-menu-favourites" href="#">Закладки: 0</a>
+      <li class="top-menu-item top-menu-favourites">
+        <a href="#">Закладки: 0</a>
       </li>
-      <li class="top-menu-item">
-        <a class="top-menu-cart" href="#">Корзина: 0</a>
+      <li class="top-menu-item top-menu-cart">
+        <a href="#">Корзина: 0</a>
       </li>
-      <li class="top-menu-item">
-        <a class="top-menu-order" href="#">Оформить заказ</a>
+      <li class="top-menu-item top-menu-order">
+        <a href="#">Оформить заказ</a>
       </li>
     </ul>
   </section>
@@ -80,14 +83,14 @@
     <!-- СЛАЙДЕР -->
     <section class="main-slider">
       <article class="main-slider-slide1">
-        <h2>Перфораторы</h2>
-        <p>Настоящие мужские игрушки</p>
+        <h2 class="main-slider-header uppercase">Перфораторы</h2>
+        <p class="main-slider-subheader">Настоящие мужские игрушки</p>
         <img src="https://via.placeholder.com/620x266" alt="Перфоратор в работе" width="620" height="266">
-        <a href="catalog.html">Открыть каталог</a>
+        <a class="button" href="catalog.html">Открыть каталог</a>
       </article>
       <article class="main-slider-slide2">
-        <h2>Заголовок 2 слайда</h2>
-        <p>Текстовое поле 2 слайда</p>
+        <h2 class="main-slider-header uppercase">Заголовок 2 слайда</h2>
+        <p class="main-slider-subheader">Текстовое поле 2 слайда</p>
         <img src="https://via.placeholder.com/620x266" alt="Перфоратор в работе" width="620" height="266">
         <a class="button" href="catalog.html">Открыть каталог</a>
       </article>
@@ -98,24 +101,24 @@
     <ul class="promo-partitions">
       <li class="partitions-item orange">
         <h3>Материалы</h3>
-        <a href="#">на любой вкус</a>
+        <a class="promo-partitions-link-text uppercase" href="#">на любой вкус</a>
         <p class="new-billet">new</p>
       </li>
-      <li class="partitions-item blue">
+      <li class="partitions-item bright-cyan">
         <h3>Инстурмент</h3>
-        <a href="#">на все случаи</a>
+        <a class="promo-partitions-link-text uppercase" href="#">на все случаи</a>
       </li>
       <li class="partitions-item purple">
         <h3>Техника</h3>
-        <a href="#">для стройки</a>
+        <a class="promo-partitions-link-text uppercase" href="#">для стройки</a>
       </li>
       <li class="partitions-item light-green">
         <h3>Скидки 50%</h3>
-        <a href="#">на 350 товаров</a>
+        <a class="promo-partitions-link-text uppercase" href="#">на 350 товаров</a>
       </li>
       <li class="partitions-item orange">
         <h3>Доставка</h3>
-        <a href="#">бесплатно</a>
+        <a class="promo-partitions-link-text uppercase" href="#">бесплатно</a>
       </li>
     </ul>
   </section>

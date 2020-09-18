@@ -1,8 +1,207 @@
+/*
+font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif;
+ */
+/* Fonts */
+
 /* Variables */
 
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
 
+  /* Colors Header */
+  --very-dark-blue: #293449;
+  --darken-blue: #32425C;
+  --dark-blue: #293449;
+  --dark-green: #63A63E;
+  --bright-red: #EE3643;
+  --light-gray: #F3F7F9;
+  /* RGBA*/
+  --header-rgba: rgba(0, 0, 0, 0.0001);
+
+  /* Promo-block colors */
+  --orange: #FFBF47;
+  --bright-cyan: #3BBCE3;
+}
 
 /* Global */
 
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 
+}
 
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--bright-red);
+  text-transform: uppercase;
+
+}
+
+.new-billet {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 18px;
+  /* transform: rotate(45deg); */ /* УБРАТЬ КОММЕНТАРИЙ */
+  background-color: var(--bright-red);
+  text-transform: uppercase;
+}
+/* Header */
+
+.header-top {
+  width: auto;
+  background-color: var(--dark-blue);
+}
+
+.header-top-menu {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.header-top-menu a {
+  color: var(--basic-white);
+}
+
+.top-menu-order {
+  background-color: var(--dark-green);
+}
+/* Header > Middle block */
+
+.header-middle-block {
+  background-color: var(--header-rgba);
+}
+
+.middle-block-text {
+  color: var(--bright-red);
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.header-address-phone {
+  color: var(--bright-red);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  background-color: var(--light-gray);
+  border: 3px solid var(--basic-white);
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.header-address-text {
+  color: var(--darken-blue);
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.header-login {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--header-rgba);
+}
+
+.header-registration {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--header-rgba);
+}
+
+/* Header > Navigation */
+.site-navigation {
+  background-color: var(--darken-blue);
+  box-shadow: inset 0px -5px 0px var(--very-dark-blue);
+  list-style-type: none;
+
+}
+
+.site-navigation a {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Promo-block */
+
+/* Promo-block > Slider */
+.main-slider-header {
+  color: var(--basic-white);
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  background-color: darkseagreen; /* !ПОДЛОЖКА! УДАЛИТЬ ПОСЛЕ ПРАВОК */
+}
+
+.main-slider-subheader {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+  background-color: darkseagreen; /* !ПОДЛОЖКА! УДАЛИТЬ ПОСЛЕ ПРАВОК */
+
+}
+/* Promo-block > Partitions  */
+
+.promo-partitions {
+  list-style-type: none;
+}
+
+.partitions-item h3 {
+  color: var(--basic-white);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+}
+.promo-partitions-link-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.bright-cyan {
+  background-color: var(--bright-cyan);
+}
