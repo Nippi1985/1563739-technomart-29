@@ -30,6 +30,8 @@
   --basic-white-rgb: 255,255,255;
   /* Services colors */
   --very-dark-blue: #405069;
+  /* Footer colors */
+  --special-orange: #FFD180;
   /* Fonts */
   --cuprum: "Cuprum", Arial, sans-serif;
   --ptsans: "PT Sans", Arial, sans-serif;
@@ -324,6 +326,8 @@ img {
   background-color: var(--basic-background);
 }
 
+/* Inform block  */
+
 .inform-block-header {
   color: var(--basic-black);
   font-size: 30px;
@@ -363,4 +367,92 @@ img {
   line-height: 24px;
   color: var(--basic-black);
   font-weight: 400;
+}
+
+.about-header {
+  color: var(--basic-black);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-company-text, .about-contacts-text {
+  font-family: var(--ptsans);
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.about-partners-item {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.main-footer {
+  background-color: var(--darken-blue);
+
+}
+
+.footer-bottom {
+  background-color: var(--dark-blue);
+
+}
+
+.footer-menu-navigation {
+  list-style-type: none;
+}
+
+.footer-navigation-item a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-background);
+}
+
+.footer-address {
+  color: var(--light-gray);
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.footer-address-phone {
+  color: var(--light-gray);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-menu-partitions {
+  list-style-type: none;
+
+}
+
+.footer-menu-item a {
+  color: var(--special-orange);
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.footer-social {
+  list-style-type: none;
+}
+
+.feedback-text {
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+
+}
+
+.feedback-link {
+  color: var(--special-orange);
+
 }
