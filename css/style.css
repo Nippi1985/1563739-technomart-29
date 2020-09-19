@@ -6,12 +6,16 @@
   --basic-white: #ffffff;
   --basic-black: #000000;
   --basic-background: #F1F5F7;
+  --basic-greylight: #C5C5C5;
 
   /* Colors Header */
+  --mostly-black-blue: #161D29;
+  --more-darken-blue: #1D2739;
   --darken-blue: #32425C;
   --dark-blue: #293449;
   --darken-green: #367315;
   --dark-green: #63A63E;
+  --medium-green: #5FBB2D;
   --bright-red: #EE3643;
   --light-gray: #F3F7F9;
     /* Promo-block colors */
@@ -113,6 +117,23 @@ img {
   list-style-type: none;
 }
 
+.top-menu-search-field:active {
+  color: rgba(var(--basic-white-rgb), 0.5);
+}
+
+.top-menu-favourites a:active {
+  background-color: var(--mostly-black-blue);
+  color: rgba(var(--basic-white-rgb), 0.5);
+}
+
+.top-menu-cart a:active {
+  color: rgba(var(--basic-white-rgb), 0.5);
+}
+
+.top-menu-order a:active {
+  color: rgba(var(--basic-white-rgb), 0.5);
+}
+
 .header-top-menu a {
   color: var(--basic-white);
 }
@@ -120,6 +141,15 @@ img {
 .top-menu-order {
   background-color: var(--dark-green);
 }
+
+.top-menu-order:hover {
+  background-color: var(--medium-green);
+}
+
+.top-menu-order:active {
+  background-color: var(--dark-green);
+}
+
 /* Header > Middle block */
 
 .header-middle-block {
@@ -159,6 +189,22 @@ img {
   background-color: var(--basic-white);
 }
 
+.header-login:hover {
+  color: var(--bright-red);
+}
+
+.header-login:active {
+  color: var(--basic-greylight);
+}
+
+.header-registration:hover {
+  color: var(--bright-red);
+}
+
+.header-registration:active {
+  color: var(--basic-greylight);
+}
+
 .header-registration {
   color: var(--basic-black);
   font-size: 21px;
@@ -167,18 +213,33 @@ img {
 }
 
 /* Header > Navigation */
+.site-navigation a {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+}
 
-.site-navigation {
+.site-navigation-item {
   background-color: var(--darken-blue);
   box-shadow: inset 0 -5px 0 var(--dark-blue);
   list-style-type: none;
 
 }
 
-.site-navigation a {
-  color: var(--basic-white);
-  font-size: 18px;
-  line-height: 24px;
+.site-navigation-item:hover {
+  background-color: var(--dark-blue);
+  box-shadow: inset 0 -5 0 var(--dark-blue);
+
+}
+
+.site-navigation-item:active {
+  background-color: var(--more-darken-blue);
+
+}
+
+
+.site-navigation a:active {
+  color: rgba(var(--basic-white-rgb), 0.5);
 }
 
 /* Promo-block */
