@@ -332,6 +332,7 @@ color: var(--darken-blue);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .catalog-list {
@@ -581,6 +582,10 @@ color: var(--darken-blue);
   line-height: 30px;
 }
 
+.partners-list {
+  list-style-type: none;
+}
+
 .partners-item {
   background-color: var(--basic-white);
   border: 1px solid var(--very-light-gray);
@@ -611,6 +616,7 @@ color: var(--darken-blue);
   line-height: 24px;
   color: var(--basic-black);
 }
+
 
 .services-slider-item {
   color: var(--basic-white);
@@ -646,6 +652,10 @@ color: var(--darken-blue);
   line-height: 30px;
   font-weight: 400;
 
+}
+
+.services-slider-description {
+  list-style-type: none;
 }
 
 .services-slider-text {
