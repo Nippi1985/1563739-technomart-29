@@ -334,6 +334,10 @@ color: var(--darken-blue);
   text-transform: uppercase;
 }
 
+.catalog-list {
+  list-style-type: none;
+}
+
 .catalog-product-box {
   background-color: var(--basic-white);
   border: 1px solid var(--very-light-gray);
@@ -418,11 +422,11 @@ color: var(--darken-blue);
 
 /* Promo-block > Partitions  */
 
-.promo-partitions {
+.promo-list {
   list-style-type: none;
 }
 
-.partitions-item h3 {
+.promo-item h3 {
   color: var(--basic-white);
   font-size: 24px;
   line-height: 30px;
@@ -430,7 +434,7 @@ color: var(--darken-blue);
 
 }
 
-.promo-partitions-link-text {
+.promo-item-link-text {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
@@ -438,27 +442,27 @@ color: var(--darken-blue);
 
 }
 
-.promo-partitions-link-text:hover {
+.promo-item-link-text:hover {
   background-color: rgba(var(--basic-greylight-rgb), 0.3);
 }
 
-.promo-partitions-link-text:active {
+.promo-item-link-text:active {
   background-color: rgba(var(--grey-rgb), 0.3);
 }
 
-.orange {
+.bg-orange {
   background-color: var(--orange);
 }
 
-.bright-cyan {
+.bg-bright-cyan {
   background-color: var(--bright-cyan);
 }
 
-.magenta {
+.bg-magenta {
   background-color: var(--magenta);
 }
 
-.lime-green {
+.bg-lime-green {
   background-color: var(--lime-green);
 }
 
@@ -466,6 +470,10 @@ color: var(--darken-blue);
 
 .popular-products-top {
   background-color: var(--grayish-orange);
+}
+
+.popular-product-list {
+  list-style-type: none;
 }
 
 .popular-products-header {
