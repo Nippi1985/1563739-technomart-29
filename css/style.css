@@ -525,39 +525,15 @@ img {
   /* !ПОДЛОЖКА! УДАЛИТЬ ПОСЛЕ ПРАВОК */
 }
 
-.button-buy-box {
-  background-color: var(--dark-green);
-  box-shadow: inset 0 -3px 0 var(--darken-green);
-  border-radius: 2px;
-}
-
-.button-buy-box:hover {
+.button-buy:hover {
   background-color: var(--medium-green);
   box-shadow: inset 0 -3px 0 var(--darken-green);
   border-radius: 2px;
 }
 
-.button-buy-box:active {
+.button-buy:active {
   background-color: var(--dark-moderate-green);
   box-shadow: inset 0 -3px 0 var(--darken-green);
-  border-radius: 2px;
-}
-
-.button-favourites-box {
-  border: 3px solid var(--dark-green);
-  box-sizing: border-box;
-  border-radius: 2px;
-}
-
-.button-favourites-box:hover {
-  border: 3px solid var(--darken-blue);
-  box-sizing: border-box;
-  border-radius: 2px;
-}
-
-.button-favourites-box:active {
-  border: 3px solid rgba(var(--darken-blue-rgb), 0.5);
-  box-sizing: border-box;
   border-radius: 2px;
 }
 
@@ -566,6 +542,21 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  background-color: var(--dark-green);
+  box-shadow: inset 0 -3px 0 var(--darken-green);
+  border-radius: 2px;
+}
+
+.button-favourites:hover {
+  border: 3px solid var(--darken-blue);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button-favourites:active {
+  border: 3px solid rgba(var(--darken-blue-rgb), 0.5);
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .button-favourites {
@@ -573,6 +564,9 @@ img {
   line-height: 18px;
   color: var(--darken-blue);
   text-transform: uppercase;
+  border: 3px solid var(--dark-green);
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .button-favourites:active {
