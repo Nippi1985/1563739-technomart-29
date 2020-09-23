@@ -363,13 +363,13 @@ img {
 }
 
 .pagination-page {
-  display: inline-block;  //временно
-  vertical-align: center; //временно
-  text-align: center;     //временно
-  padding-left: 10px;    //временно
-  padding-right: 10px;  //временно
-  padding-top: 10px;    //временно
-  padding-bottom: 10px; //временно
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;    
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: var(--ptsans);
   color: var(--basic-black);
   font-size: 13px;
