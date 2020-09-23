@@ -363,6 +363,13 @@ img {
 }
 
 .pagination-page {
+  display: inline-block;  //временно
+  vertical-align: center; //временно
+  text-align: center;     //временно
+  padding-left: 10px;    //временно
+  padding-right: 10px;  //временно
+  padding-top: 10px;    //временно
+  padding-bottom: 10px; //временно
   font-family: var(--ptsans);
   color: var(--basic-black);
   font-size: 13px;
@@ -376,13 +383,13 @@ img {
 
 .current-page {
   background-color: var(--bright-red);
+  border: 1px solid var(--bright-red);
   color: var(--basic-white);
   cursor: default;
-  border: none;
 }
 
 .pagination-item .current-page:hover {
-  border: none;
+  border: 1px solid var(--bright-red);
 }
 
 .pagination-page:hover {
