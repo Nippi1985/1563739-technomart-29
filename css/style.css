@@ -686,10 +686,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: var(--basic-white);
   border: 1px solid var(--very-light-gray);
-  box-sizing: border-box;
+  padding-bottom: 31px;
 }
 
 .product-box p {
@@ -745,7 +745,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   background-color: tomato;  /* !ПОДЛОЖКА! УДАЛИТЬ ПОСЛЕ ПРАВОК */
-  margin: 23px 0 31px 0;
+  margin: 23px 0 0 0;
 }
 
 .button-buy-box {
@@ -807,7 +807,14 @@ img {
 /* ===== PARTNERS BLOCK ===== */
 
 .partners-block-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  min-height: 89px;
+  max-height: 400px;
   background-color: var(--grayish-orange);
+  margin: 20px 0 20px 0;
 }
 
 .partners-block-header {
@@ -815,6 +822,7 @@ img {
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  padding-left: 28px;
 }
 
 .partners-list {
