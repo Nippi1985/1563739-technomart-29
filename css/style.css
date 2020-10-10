@@ -661,6 +661,8 @@ img {
   padding: 0;
 }
 
+
+
 .catalog-product-box {
   background-color: var(--basic-white);
   border: 1px solid var(--very-light-gray);
@@ -845,6 +847,7 @@ img {
 
 .promo-item {
   position: relative;
+  overflow: hidden;
 }
 
 .new-promo {
@@ -852,7 +855,6 @@ img {
   top: -10px;
   right: -25px;
   transform: rotate(45deg);
-  overflow: hidden; /* не работает :( */
 }
 
 .promo-item h3 {
@@ -949,6 +951,7 @@ img {
   align-items: center;
   background-color: var(--basic-white);
   border: 1px solid var(--very-light-gray);
+  overflow: hidden;
 }
 
 .product-box p {
@@ -961,7 +964,6 @@ img {
   top: 0;
   right: -25px;
   transform: rotate(45deg);
-  overflow: hidden;
 }
 
 .product-box:hover {
