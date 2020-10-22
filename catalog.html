@@ -141,49 +141,95 @@
       <!-- ФИЛЬТР КАТАЛОГА -->
       <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <fieldset class="filter">
           <div class="filter-name uppercase">
             <p>Фильтр:</p>
           </div>
           <fieldset class="filter-price-block">
             <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="progress-bar">
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0">
+                </label><span>&mdash;</span>
+                <label class="max-price">
+                  <input type="number" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
           </fieldset>
-           <!-- Форма -->
-        </fieldset>
         <fieldset class="filter-manufacturer">
-            <legend>Производители:</legend>
-            <ul class="manufacturer-list">
-              <li class="manufacturer-item">
-                <input type="checkbox" id="bosch" checked>
-                <label for="bosch">Bosch</label>
-              </li>
-              <li class="manufacturer-item">
-                <input type="checkbox" id="interskol">
-                <label for="interskol">Интерскол</label>
-              </li>
-              <li class="manufacturer-item">
-                <input type="checkbox" id="makita" checked>
-                <label for="makita">Makita</label>
-              </li>
-              <li class="manufacturer-item">
-                <input type="checkbox" id="dewalt">
-                <label for="dewalt">Dewalt</label>
-              </li>
-              <li class="manufacturer-item">
-                <input type="checkbox" id="hitachi">
-                <label for="hitachi">Makita</label>
-              </li>
-            </ul>
+          <legend>Производители:</legend>
+          <ul class="manufacturer-list">
+            <li class="manufacturer-item">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+              <label class="labell" for="bosch">
+                <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
+                    fill="#c5c5c5" stroke="white" stroke-width="2"/>
+                </svg>
+                Bosch</label>
+            </li>
+            <li class="manufacturer-item">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
+              <label class="labell" for="interskol">
+                <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
+                    fill="#c5c5c5" stroke="white" stroke-width="2"/>
+                </svg>
+                Интерскол</label>
+            </li>
+            <li class="manufacturer-item">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
+              <label class="labell" for="makita">
+                <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
+                    fill="#c5c5c5" stroke="white" stroke-width="2"/>
+                </svg>
+                Makita</label>
+            </li>
+            <li class="manufacturer-item">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
+              <label class="labell" for="dewalt">
+                <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
+                    fill="#c5c5c5" stroke="white" stroke-width="2"/>
+                </svg>
+                Dewalt</label>
+            </li>
+            <li class="manufacturer-item">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi" disabled>
+              <label class="labell" for="hitachi">
+                <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
+                    fill="#c5c5c5" stroke="white" stroke-width="2"/>
+                </svg>
+                Hitachi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="filter-power">
           <legend>Питание:</legend>
           <ul class="power-list">
             <li class="power-item">
-              <input type="checkbox" id="accum">
+              <input class="visually-hidden power-input-checkbox" type="radio" name="power-type" value="accum"
+                     id="accum" checked>
               <label for="accum">Аккумуляторные</label>
             </li>
             <li class="power-item">
-              <input type="checkbox" id="220v">
+              <input class="visually-hidden power-input-checkbox" type="radio" name="power-type" value="220v" id="220v">
               <label for="220v">От сети</label>
             </li>
           </ul>
@@ -208,7 +254,10 @@
                 <a class="sorting-link" href="#">По функционалу</a>
               </li>
             </ul>
-            <span class="sorting-item arrows">+-</span>
+            <div class="sorting-arrows">
+            <a class="arrows up-arrow current-arrow" href="#"></a>
+            <a class="arrows down-arrow" href="#"></a>
+            </div>
           </div>
         </section>
         <!-- КОНЕЦ СОРТИРОВКИ КАТАЛОГА -->
