@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог | Магазин «Техномарт»</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -51,8 +49,8 @@
       и инструментов для ремонта
     </p>
     <address class="header-address-block">
-      <a class="header-address-phone" href="tel:+78125550555">+ 7 (812) 555-05-55</a>
-      <p class="header-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a class="catalog-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <p class="header-address-text catalog-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </address>
     <div class="account-grid">
       <p class="account-name">
@@ -87,7 +85,7 @@
   <!-- КОНЕЦ ЦЕНТРАЛЬНОЙ СЕКЦИИ ХЕДЕРА -->
 
   <!-- НАЧАЛО ГЛАВНОЙ НАВИГАЦИИ ХЕДЕРА -->
-  <nav class="main-navigation">
+  <nav class="main-navigation pp-margin">
     <ul class="site-navigation">
       <li class="site-navigation-item">
         <a href="index.html">Главная</a>
@@ -158,7 +156,8 @@
               <div class="price-controls">
                 <label class="min-price">
                   <input type="number" name="min-price" value="0">
-                </label><span>&mdash;</span>
+                </label>
+                &ndash;
                 <label class="max-price">
                   <input type="number" name="max-price" value="30000">
                 </label>
@@ -170,7 +169,7 @@
           <ul class="manufacturer-list">
             <li class="manufacturer-item">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
-              <label class="labell" for="bosch">
+              <label for="bosch">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
@@ -180,7 +179,7 @@
             </li>
             <li class="manufacturer-item">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
-              <label class="labell" for="interskol">
+              <label for="interskol">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
@@ -190,7 +189,7 @@
             </li>
             <li class="manufacturer-item">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
-              <label class="labell" for="makita">
+              <label for="makita">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
@@ -199,8 +198,8 @@
                 Makita</label>
             </li>
             <li class="manufacturer-item">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
-              <label class="labell" for="dewalt">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt" disabled>
+              <label for="dewalt">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
@@ -209,8 +208,8 @@
                 Dewalt</label>
             </li>
             <li class="manufacturer-item">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi" disabled>
-              <label class="labell" for="hitachi">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi" checked disabled>
+              <label for="hitachi">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M6.99203 8.7788L6.28492 8.07183L5.57789 8.77887L2.74889 11.6079L2.04178 12.315L2.74889 13.0221L10.5319 20.8051L11.239 21.5122L11.9461 20.8051L25.8781 6.87308L26.5851 6.1661L25.8782 5.45899L23.0502 2.62999L22.3432 1.9227L21.636 2.6298L11.239 13.0249L6.99203 8.7788Z"
@@ -229,8 +228,8 @@
               <label for="accum">Аккумуляторные</label>
             </li>
             <li class="power-item">
-              <input class="visually-hidden power-input-checkbox" type="radio" name="power-type" value="220v" id="220v">
-              <label for="220v">От сети</label>
+              <input class="visually-hidden power-input-checkbox" type="radio" name="power-type" value="220v" id="220v" disabled>
+              <label for="220v">Сетевые</label>
             </li>
           </ul>
           <a class="filter-button" href="#">Показать</a>
@@ -242,7 +241,7 @@
       <div class="catalog-product-grid">
         <section class="catalog-sorting">
           <div class="sorting-options">
-            <span class="sorting-item sort uppercase">Сортировка:</span>
+            <span class="sort uppercase">Сортировка:</span>
             <ul class="sorting-list price-type uppercase">
               <li class="sorting-item price">
                 <a class="sorting-link sort-active" href="#">По цене</a>
@@ -272,7 +271,7 @@
                   <h3>Перфоратор BOSCH<br> BFG 6000</h3>
                 </a>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg6000.jpg" height="128" width="144"
+                  <img class="product-image pp-6000" src="img/bosch-bfg6000.jpg" height="128" width="144"
                        alt="Перфоратор bosch bfg 6000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -295,7 +294,7 @@
                   <h3>Перфоратор BOSCH<br> BFG 6000</h3>
                 </a>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg6000.jpg" height="128" width="144"
+                  <img class="product-image pp-6000" src="img/bosch-bfg6000.jpg" height="128" width="144"
                        alt="Перфоратор bosch bfg 6000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -319,7 +318,7 @@
                 </a>
                 <p class="new-product new-popular">new</p>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg6000.jpg" height="128" width="144"
+                  <img class="product-image pp-6000" src="img/bosch-bfg6000.jpg" height="128" width="144"
                        alt="Перфоратор bosch bfg 6000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -343,7 +342,7 @@
                 </a>
                 <p class="new-product new-popular">new</p>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg3000.jpg" height="112" width="127"
+                  <img class="product-image pp-3000" src="img/bosch-bfg3000.jpg" height="112" width="127"
                        alt="Перфоратор bosch bfg 3000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -366,7 +365,7 @@
                   <h3>Перфоратор BOSCH<br> BFG 6000</h3>
                 </a>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg6000.jpg" height="128" width="144"
+                  <img class="product-image pp-6000" src="img/bosch-bfg6000.jpg" height="128" width="144"
                        alt="Перфоратор bosch bfg 6000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -390,7 +389,7 @@
                 </a>
                 <p class="new-product new-popular">new</p>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg2000.jpg" height="112" width="127"
+                  <img class="product-image pp-2000" src="img/bosch-bfg2000.jpg" height="112" width="127"
                        alt="Перфоратор bosch bfg 2000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -411,7 +410,7 @@
                 </a>
                 <p class="new-product new-popular">new</p>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg3000.jpg" height="112" width="127"
+                  <img class="product-image pp-3000" src="img/bosch-bfg3000.jpg" height="112" width="127"
                        alt="Перфоратор bosch bfg 3000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -434,7 +433,7 @@
                   <h3>Перфоратор BOSCH<br> BFG 6000</h3>
                 </a>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg6000.jpg" height="128" width="144"
+                  <img class="product-image pp-6000" src="img/bosch-bfg6000.jpg" height="128" width="144"
                        alt="Перфоратор bosch bfg 6000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -458,7 +457,7 @@
                 </a>
                 <p class="new-product new-popular">new</p>
                 <div class="product-container">
-                  <img class="product-image" src="img/bosch-bfg2000.jpg" height="112" width="127"
+                  <img class="product-image pp-2000" src="img/bosch-bfg2000.jpg" height="112" width="127"
                        alt="Перфоратор bosch bfg 2000">
                   <div class="product-popup">
                     <div class="button-buy-box">
@@ -498,7 +497,7 @@
   <div class="afteword-bg">
     <section class="catalog-afterword container">
       <h2 class="afterword-header">Пара слов о перфораторах</h2>
-      <p class="afterword-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
+      <p class="afterword-text">Перфоратор &ndash; универсальный строительный инструмент. Предназначен для сверления и
         долбления
         отверстий в кирпиче,
         бетоне и камне.<br>
@@ -519,7 +518,7 @@
     </a>
     <address class="footer-address">
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        <a class="footer-address-phone" href="tel:+78125550555">+ 7 (812) 555-05-55</a>
+        <a class="footer-address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       </p>
     </address>
     <!-- НАЧАЛО НАВИГАЦИИ ФУТЕРА -->
@@ -561,7 +560,7 @@
   <!-- КОНЕЦ НАВИГАЦИИ ФУТЕРА -->
   <div class="footer-bottom">
     <div class="footer-bottom-wrapper container">
-      <p class="footer-copyright">© 2010–2019 Компания «Техномарт»<br>
+      <p class="footer-copyright">&copy; 2010&ndash;2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
       <!-- НАЧАЛО СЕКЦИИ СОЦСЕТИ -->
@@ -593,5 +592,18 @@
 </footer>
 <!-- КОНЕЦ ФУТЕРА -->
 
+<!-- НАЧАЛО МОДАЛОК -->
+<div class="popup-container">
+  <section class="product-in-cart">
+    <div class="order-added">
+      <p>Товар добавлен в корзину!</p>
+    </div>
+    <div class="popup-buttons">
+      <a class="button popup-button-buy uppercase" href="#">Оформить заказ</a>
+      <a class="button popup-button-continue uppercase" href="#">Продолжить покупки</a>
+    </div>
+  </section>
+</div>
+<!-- КОНЕЦ МОДАЛОК -->
 </body>
 </html>
