@@ -2,62 +2,62 @@
 
 /* cuprum-regular */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
-  src: local('Cuprum Regular'), local('Cuprum-Regular'),
-  url('../fonts/cuprum.woff2') format('woff2'),
-  url('../fonts/cuprum.woff') format('woff');
+  src: local("Cuprum Regular"), local("Cuprum-Regular"),
+  url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
 }
 
 /* cuprum-700 */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
-  src: local('Cuprum Bold'), local('Cuprum-Bold'),
-  url('../fonts/cuprumbold.woff2') format('woff2'),
-  url('../fonts/cuprumbold.woff') format('woff');
+  src: local("Cuprum Bold"), local("Cuprum-Bold"),
+  url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
 }
 
 /* cuprum-italic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: 400;
-  src: local('Cuprum Italic'), local('Cuprum-Italic'),
-  url('../fonts/cuprumitalic.woff2') format('woff2'),
-  url('../fonts/cuprumitalic.woff') format('woff');
+  src: local("Cuprum Italic"), local("Cuprum-Italic"),
+  url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
 }
 
 /* cuprum-700italic */
 @font-face {
-  font-family: 'Cuprum';
+  font-family: "Cuprum";
   font-style: italic;
   font-weight: 700;
-  src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'),
-  url('../fonts/cuprumbolditalic.woff2') format('woff2'),
-  url('../fonts/cuprumbolditalic.woff') format('woff');
+  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"),
+  url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+  url("../fonts/cuprumbolditalic.woff") format("woff");
 }
 
 /* pt-sans-regular */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'),
-  url('../fonts/ptsans.woff2') format('woff2'),
-  url('../fonts/ptsans.woff') format('woff');
+  src: local("PT Sans"), local("PTSans-Regular"),
+  url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
 }
 
 /* pt-sans-700 */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-  url('../fonts/ptsansbold.woff2') format('woff2'),
-  url('../fonts/ptsansbold.woff') format('woff');
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+  url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
 }
 
 /* ===== ROOT VARIABLES ===== */
@@ -307,11 +307,15 @@ img {
   color: var(--basic-white);
 }
 
+.search::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
 .user-block-item {
   position: relative;
   width: 150px;
   height: 42px;
-  /*text-align: center;*/
 }
 
 .user-block-search p {
@@ -1507,7 +1511,8 @@ img {
   padding: 0;
   list-style-type: none;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 123px 123px 123px;
+  /*grid-template-rows: 123px 123px 123px;*/
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   grid-template-areas:
   "mats inst tech"
@@ -1615,6 +1620,7 @@ img {
   display: block;
   width: 135px;
   margin-left: 22px;
+  margin-bottom: 21px;
   padding: 10px 0 10px 0;
   font-size: 14px;
   line-height: 18px;
