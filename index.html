@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин «Техномарт»</title>
-  <!--<link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +17,7 @@
       </a>
       <ul class="user-block-menu">
         <li class="user-block-search">
-          <form class="user-block-search-field">
+          <form class="user-block-search-field" method="get" action="https://echo.htmlacademy.ru">
             <label class="search-label">
               <input class="search" type="search" name="search" placeholder="Поиск:" autocomplete="off">
               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,15 +107,16 @@
           <h2 class="main-slider-header uppercase">Перфораторы</h2>
           <p class="main-slider-subheader">Настоящие мужские игрушки</p>
         </div>
-        <img src="img/slider-bosch-perforator.jpg" width="620" height="266" alt="Перфоратор в работе">
+        <img src="img/slider-bosch-perforator.jpg" width="620" height="266" alt="На строительном объекте, в неплотном облаке пыли, мужчина с 3-дневной щетиной, в очках, каске, перчатках и шумозащитных наушниках сверлит бетонную стену профессиональным перфоратором Bosch BFG-9000 с алмазным сверлом">
         <a class="button slider-button" href="catalog.html">Открыть каталог</a>
       </article>
-      <article class="main-slider-slide">
+      <article class="main-slider-slide  ">
         <div class="main-slider-background">
           <h2 class="main-slider-header uppercase">Дрели</h2>
           <p class="main-slider-subheader">Соседям на радость!</p>
         </div>
-        <img src="img/slider-screwdriver-bosh.jpg" width="620" height="266" alt="Шуруповерт в работе">
+        <img src="img/slider-screwdriver-bosh.jpg" width="620" height="266" alt="На строительном объекте, мужчина с 3-дневной щетиной на лице, одетый в серую майку, жёлтую защитную каску, защитные очки, беруши и перчатки, используя аккумуляторный шуруповерт Bosch профессиональной серии сверлит кирпичную стену 10-мм сверлом">
+        <a class="button slider-button" href="catalog.html">Открыть каталог</a>
       </article>
       <div>
         <button class="slider-arrow previous-slide" type="button" aria-label="Предыдущий слайд"></button>
@@ -517,8 +516,8 @@
 <!-- КОНЕЦ МОДАЛ > ОБРАТНАЯ СВЯЗЬ -->
 <!-- МОДАЛ > КАРТА -->
 <div class="map-popup-container">
-  <section class="map-popup" style="position:relative;overflow:hidden;">
-    <iframe src="https://yandex.by/map-widget/v1/-/CCQ~NCgxpC" width="100%" height="449" allowfullscreen
+  <section class="map-popup">
+    <iframe src="https://yandex.by/map-widget/v1/-/CCQ~NCgxpC" width="943" height="442" allowfullscreen
             style="position:relative;" title="Офис компани по адресу г. Санк-Петербург, ул. Большая Конюшенная 19/8">
     </iframe>
   </section>
@@ -526,7 +525,7 @@
 <!-- КОНЕЦ МОДАЛ > КАРТА -->
 
 <!-- МОДАЛ > КОРЗИНА -->
-<div class="popup-container">
+<div class="cart-popup-container">
   <section class="product-in-cart">
     <div class="order-added">
       <p>Товар добавлен в корзину!</p>
