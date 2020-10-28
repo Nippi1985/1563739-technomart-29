@@ -161,6 +161,7 @@ img {
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: var(--bright-red);
+  outline: none;
 }
 
 .button:hover {
@@ -236,9 +237,6 @@ img {
   grid-column-end: 2;
   grid-template-columns: 220px 1fr;
   grid-template-rows: 42px;
-}
-
-.main-logo-container {
 }
 
 .main-logo-container:active {
@@ -600,7 +598,6 @@ img {
   padding: 12px 0 9px 0;
   font-size: 21px;
   line-height: 21px;
-  /*text-align: center;*/
   color: var(--basic-black);
   background-color: var(--basic-white);
   user-select: none;
@@ -1248,6 +1245,8 @@ img {
   text-transform: uppercase;
   background: var(--basic-white);
   border: 1px solid var(--pagination-very-light-gray);
+  outline: none;
+  cursor: pointer;
 }
 
 .catalog {
@@ -1515,7 +1514,6 @@ img {
   padding: 0;
   list-style-type: none;
   grid-template-columns: 1fr 1fr 1fr;
-  /*grid-template-rows: 123px 123px 123px;*/
   grid-template-rows: 1fr 1fr 1fr;
   gap: 20px;
   grid-template-areas:
@@ -2411,7 +2409,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
   margin: 15px 0 0 0;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -2527,9 +2524,6 @@ img {
 .footer-feedback {
   display: flex;
   justify-content: flex-end;
-}
-
-.footer-feedback:nth-child(1) {
 }
 
 .feedback-text {
@@ -2725,6 +2719,10 @@ img {
   display: block;
 }
 
+.name [type=text] {
+  padding: 30px;
+}
+
 .email {
   display: block;
   margin-left: 20px;
@@ -2733,6 +2731,7 @@ img {
 .feedback-name-container {
   margin-left: 80px;
 }
+
 
 .feedback-name-container label {
   padding-bottom: 10px;
@@ -2754,15 +2753,24 @@ img {
 
 .writeus-form::-webkit-input-placeholder,
 .feedback-textarea::-webkit-input-placeholder {
-  padding-left: 10px;
   font-size: 13px;
   line-height: 24px;
   font-family: var(--ptsans);
   color: var(--gray);
 }
 
+
+.feedback-name-container input[type=text],
+.feedback-email-container input[type=email] {
+  padding-left: 10px;
+  color: var(--basic-black)
+}
+
 .feedback-textarea::-webkit-input-placeholder {
   padding-top: 2px;
+}
+
+.feedback-textarea {
   padding-left: 8px;
 }
 
@@ -2782,7 +2790,10 @@ img {
 }
 
 .writeus-button {
+  border: none;
   box-sizing: border-box;
   width: 460px;
   min-height: 38px;
+  cursor: pointer;
+  padding-top: 3px;
 }
