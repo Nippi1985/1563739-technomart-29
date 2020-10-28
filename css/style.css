@@ -308,7 +308,7 @@ img {
 }
 
 .search::-moz-placeholder {
-  color: white;
+  color: var(--basic-white);
   opacity: 1;
 }
 
@@ -596,28 +596,32 @@ img {
   box-sizing: border-box;
   width: 300px;
   min-height: 45px;
-  margin: 0;
-  padding: 15px 55px 9px 55px;
+  margin: 3px 0 0 0;
+  padding: 12px 0 9px 0;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
+  /*text-align: center;*/
   color: var(--basic-black);
   background-color: var(--basic-white);
   user-select: none;
 }
 
 .user {
+  display: block;
+  max-width: 195px;
   font-size: 21px;
   line-height: 21px;
   font-family: var(--cuprum);
   color: var(--basic-black);
   text-decoration: none;
+  padding-left: 58px;
+  padding-right: 1px;
 }
 
 .icon-logout {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 14px;
   right: 17px;
   width: 20px;
   height: 17px;
@@ -643,7 +647,7 @@ img {
 .icon-userpic {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 13px;
   left: 15px;
   width: 20px;
   height: 17px;
@@ -684,7 +688,7 @@ img {
   position: relative;
   display: flex;
   justify-content: space-around;
-  margin: 7px 0 0 19px;
+  margin: 4px 0 0 19px;
   padding: 0;
   list-style-type: none;
 }
