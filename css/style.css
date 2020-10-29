@@ -1050,6 +1050,10 @@ img {
   -webkit-appearance: none;
 }
 
+.price-controls input[type='number'] {
+  -moz-appearance:textfield;
+}
+
 .filter-price-block legend,
 .filter-manufacturer legend,
 .filter-power legend {
@@ -1711,7 +1715,7 @@ img {
 }
 
 .product-box:hover {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 20px rgba(var(--basic-black-rgb), 0.15));
 }
 
 .product-box p {
@@ -1939,7 +1943,7 @@ img {
 }
 
 .partners-item:hover {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 20px rgba(var(--basic-black-rgb), 0.15));
 }
 
 .partners-item a:active {
@@ -2564,7 +2568,7 @@ img {
   min-height: 282px;
   background-color: var(--basic-white);
   border-top: 7px solid var(--bright-red);
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 10px 20px rgba(var(--basic-black-rgb), 0.30));
 }
 
 .product-in-cart::after {
@@ -2574,7 +2578,7 @@ img {
   right: 11px;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icon-X.svg");
+  background-image: url("../img/icon-x.svg");
 }
 
 .order-added {
@@ -2648,7 +2652,8 @@ img {
   height: 449px;
   border: none;
   border-top: 7px solid var(--bright-red);
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  /*filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));*/
+  filter: drop-shadow(0px 10px 20px rgba(var(--basic-black-rgb), 0.30));
 }
 
 .map-popup::before {
@@ -2659,7 +2664,7 @@ img {
   z-index: 888;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icon-X.svg");
+  background-image: url("../img/icon-x.svg");
 }
 
 .map-popup iframe {
@@ -2674,7 +2679,7 @@ img {
   width: 620px;
   height: 430px;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 10px 20px rgba(var(--basic-black-rgb), 0.30));
 }
 
 .popup-writeus {
@@ -2693,7 +2698,7 @@ img {
   right: 11px;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icon-X.svg");
+  background-image: url("../img/icon-x.svg");
 }
 
 .writeus-form {
