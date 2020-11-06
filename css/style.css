@@ -144,7 +144,13 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
   clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+  overflow: hidden;
+
 }
 
 .uppercase {
@@ -170,6 +176,11 @@ img {
 
 .button:active {
   background-color: var(--more-strong-red);
+}
+
+.button:focus {
+  outline: 2px solid var(--basic-black);
+
 }
 
 .new-product {
@@ -331,8 +342,7 @@ img {
 
 .user-block-favourites a {
   position: relative;
-  padding-top: 10px;
-  padding-left: 43px;
+  padding: 10px 0 8px 43px;
 }
 
 .user-block a:not(.main-logo-container) {
@@ -762,6 +772,11 @@ img {
   background-color: var(--more-darken-blue);
 }
 
+.site-navigation a:focus {
+  background-color: var(--dark-blue);
+  box-shadow: inset 0 -5 0 var(--dark-blue);
+}
+
 .site-navigation a:active {
   color: rgba(var(--basic-white-rgb), 0.5);
 }
@@ -1077,11 +1092,17 @@ img {
   border-radius: 4px;
 }
 
-.filter-input-checkbox:hover + label::before {
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
   border: 2px solid var(--grayb5);
 }
 
-.filter-input-checkbox:hover + label path {
+.filter-input-checkbox:focus + label::before {
+  outline: 2px solid var(--basic-grey);
+}
+
+.filter-input-checkbox:hover + label path,
+.filter-input-checkbox:focus + label path {
   fill: var(--grayb5);
 }
 
@@ -1092,7 +1113,7 @@ img {
 }
 
 
-.manufacturer-item input:disabled:hover + label path, /*Красит галочку в дизейбл-чекбоксе при :hover*/
+.manufacturer-item input:disabled:hover + label path, /*Красит галку в дизейбл-чекбоксе при :hover*/
 .filter-input-checkbox:disabled:hover + label::before /*Красит рамку в дизейбл-чекбоксе при :hover*/
 {
   opacity: 0.7;
@@ -1141,11 +1162,17 @@ img {
   border-radius: 50%;
 }
 
-.power-input-checkbox:hover + label::before {
+.power-input-checkbox:hover + label::before,
+.power-input-checkbox:focus + label::before {
   border: 4px solid var(--grayb5);
 }
 
-.power-input-checkbox:checked:hover + label::after {
+.power-input-checkbox:focus + label::before {
+  outline: 2px solid var(--basic-grey);
+}
+
+.power-input-checkbox:checked:hover + label::after,
+.power-input-checkbox:checked:focus + label::after {
   background-color: var(--grayb5);
 }
 
@@ -1445,7 +1472,6 @@ img {
   display: flex;
   justify-content: space-between;
   width: 30px;
-
 }
 
 .slider-controls button {
@@ -1458,8 +1484,13 @@ img {
   cursor: pointer;
 }
 
+.slider-controls button:hover {
+  opacity: 0.7;
+}
+
 .slider-controls button:focus, .slider-controls button:active {
-  outline: none;
+  outline: 2px solid var(--basic-white);
+  opacity: 0.6;
 }
 
 .slider-controls .current {
@@ -1507,7 +1538,8 @@ img {
 }
 
 .previous-slide:focus, .next-slide:focus {
-  opacity: 0.1;
+  outline: 2px solid var(--basic-white);
+  opacity: 0.6;
 }
 
 /* ===== PROMO-BLOCK  >  PARTITIONS=====  */
@@ -1734,6 +1766,15 @@ img {
 }
 
 .product-box:hover .product-popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-box:focus-within img {
+  display: none;
+}
+
+.product-box:focus-within .product-popup {
   display: flex;
   flex-direction: column;
 }
@@ -2064,16 +2105,21 @@ img {
 }
 
 .services-slider-content {
+  width: 240px;
+  min-height: 61px;
   margin: 0;
-  padding: 14px 139px 18px 22px;
+  padding: 14px 0 18px 22px;
   list-style-type: none;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  text-align: left;
   color: var(--basic-white);
   background-color: var(--darken-blue);
   box-shadow: 0 1px 0 var(--dark-blue), inset 0 1px 0 var(--very-dark-blue);
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .services-slider-content:hover {
@@ -2351,16 +2397,13 @@ img {
   grid-row-end: 2;
 }
 
-.footer-menu {
-  margin: 37px 0 0 0;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
 
 .footer-menu-navigation {
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 20px 0;
+  margin: 37px 0 20px 0;
   padding: 0;
   list-style-type: none;
 }
@@ -2409,20 +2452,13 @@ img {
   color: var(--light-gray);
 }
 
-.footer-menu-features {
-  display: flex;
-  flex-wrap: wrap;
+.footer-menu-partitions {
   justify-content: flex-start;
-  margin: 15px 0 0 0;
   grid-row-start: 2;
   grid-row-end: 3;
-
-}
-
-.footer-menu-partitions {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 15px 0 0 0;
   padding: 0 0 54px 66px;
   list-style-type: none;
 }
@@ -2571,14 +2607,20 @@ img {
   filter: drop-shadow(0px 10px 20px rgba(var(--basic-black-rgb), 0.30));
 }
 
-.product-in-cart::after {
-  content: "";
+.cart-close-button {
   position: absolute;
   top: 12px;
   right: 11px;
   width: 21px;
   height: 21px;
+  border: 0;
+  background-color: transparent;
   background-image: url("../img/icon-x.svg");
+  cursor: pointer;
+}
+
+.cart-close-button:hover {
+  opacity: 0.5;
 }
 
 .order-added {
@@ -2652,7 +2694,6 @@ img {
   height: 449px;
   border: none;
   border-top: 7px solid var(--bright-red);
-  /*filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));*/
   filter: drop-shadow(0px 10px 20px rgba(var(--basic-black-rgb), 0.30));
 }
 
@@ -2665,6 +2706,19 @@ img {
   width: 21px;
   height: 21px;
   background-image: url("../img/icon-x.svg");
+}
+
+.map-close-button {
+  position: absolute;
+  top: 10px;
+  right: 11px;
+  z-index: 888;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-x.svg");
+  cursor: pointer;
 }
 
 .map-popup iframe {
@@ -2691,13 +2745,14 @@ img {
   border-top: 7px solid var(--bright-red);
 }
 
-.popup-writeus::after {
-  content: "";
+.writeus-close-button {
   position: absolute;
+  border: none;
   top: 14px;
   right: 11px;
   width: 21px;
   height: 21px;
+  background-color: transparent;
   background-image: url("../img/icon-x.svg");
 }
 
@@ -2720,18 +2775,37 @@ img {
   list-style-type: none;
 }
 
-.name {
+.name,
+.name-input {
   display: block;
 }
 
-.name [type=text] {
+.name-input [type=text] {
   padding: 30px;
 }
 
-.email {
+.email,
+.email-input {
   display: block;
   margin-left: 20px;
 }
+
+.email-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+/*@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}*/
 
 .feedback-name-container {
   margin-left: 80px;
@@ -2801,4 +2875,8 @@ img {
   min-height: 38px;
   cursor: pointer;
   padding-top: 3px;
+}
+
+.popup-show {
+  display: block;
 }
