@@ -58,6 +58,7 @@ writeusForm.addEventListener("submit", function (evt) {
         writeusPopup.classList.add("email-error");
     }
       else {localStorage.setItem("name", formName.value);}
+    setTimeout(() => { writeusPopup.classList.remove("email-error") }, 200);
 });
 
 /* ===== МОДАЛ - ИНТЕРАКТИВНАЯ КАРТА ===== */
