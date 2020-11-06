@@ -1,4 +1,4 @@
-/* ===== МОДАЛ - ДОБАВЛЕНИЕ ТОВАРА ===== */
+/* ===== МОДАЛ - ДОБАВЛЕНИЕ ТОВАРА В КОРЗИНУ ===== */
 const buyButtons = document.querySelectorAll(".button-buy");
 const cart = document.querySelector(".cart-popup-container");
 const cartCloseButton = cart.querySelector(".cart-close-button");
@@ -27,10 +27,10 @@ const nameStorage = localStorage.getItem("name");
 writeusButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeusPopup.classList.add("popup-show");
-    email.focus();
     if (nameStorage) {
         formName.value = nameStorage;
-    }
+        email.focus();
+    } else {email.focus();}
 });
 
 writeusCloseButton.addEventListener("click", function (evt) {
@@ -50,15 +50,12 @@ window.addEventListener("keydown", function (evt) {
 })
 
 writeusForm.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-    if (writeusPopup.classList.contains("email-error")) {
-        writeusPopup.classList.remove("email-error");
-    }
-      else if (!email.value) {
-        writeusPopup.classList.add("email-error");
-    }
-      else {localStorage.setItem("name", formName.value);}
-    setTimeout(() => { writeusPopup.classList.remove("email-error") }, 200);
+   if (!email.value || !formName.value) {
+       evt.preventDefault();
+       writeusPopup.classList.remove("email-error");
+       writeusPopup.offsetWidth = writeusPopup.offsetWidth;
+       writeusPopup.classList.add("email-error");
+   }   else {localStorage.setItem("name", formName.value);}
 });
 
 /* ===== МОДАЛ - ИНТЕРАКТИВНАЯ КАРТА ===== */
