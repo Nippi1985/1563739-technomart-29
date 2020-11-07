@@ -10,6 +10,15 @@ for (let buyButton of buyButtons) {
     });
 }
 
+window.addEventListener("keydown", function (evt) {
+    if (evt.key === "Escape") {
+        if (cart.classList.contains("popup-show")) {
+            evt.preventDefault();
+            cart.classList.remove("popup-show");
+        }
+    }
+});
+
 cartCloseButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     cart.classList.remove("popup-show");

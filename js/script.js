@@ -10,6 +10,15 @@ for (let buyButton of buyButtons) {
     });
 }
 
+window.addEventListener("keydown", function (evt) {
+    if (evt.key === "Escape") {
+        if (cart.classList.contains("popup-show")) {
+            evt.preventDefault();
+            cart.classList.remove("popup-show");
+        }
+    }
+});
+
 cartCloseButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     cart.classList.remove("popup-show");
@@ -75,6 +84,15 @@ mapLink.addEventListener("click", function (evt) {
 mapCloseButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("popup-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.key === "Escape") {
+        if (map.classList.contains("popup-show")) {
+            evt.preventDefault();
+            map.classList.remove("popup-show");
+        }
+    }
 });
 
 /* ===== ГЛАВНЫЙ СЛАЙДЕР ===== */
