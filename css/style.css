@@ -2660,7 +2660,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url("../img/icon-x.svg");
+  background-image: url("../img/icon-z.svg");
   border: 0;
   cursor: pointer;
 }
@@ -2752,7 +2752,7 @@ img {
   z-index: 888;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icon-x.svg");
+  background-image: url("../img/icon-z.svg");
 }
 
 .map-close-button {
@@ -2763,7 +2763,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url("../img/icon-x.svg");
+  background-image: url("../img/icon-z.svg");
   border: none;
   cursor: pointer;
 }
@@ -2800,7 +2800,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url("../img/icon-x.svg");
+  background-image: url("../img/icon-z.svg");
   border: none;
 }
 
